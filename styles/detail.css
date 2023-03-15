@@ -1,10 +1,14 @@
 :root {
-  --branding-color: #f9f6f1;
+  --branding-color: white;
   --secondary-color: #000000;
   --default-font-family: "Roboto", sans-serif;
 }
 body {
-  background: #000000;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/images/header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: var(--default-font-family);
 }
 h1,
@@ -17,33 +21,117 @@ h6 {
   font-family: var(--default-font-family);
 }
 h1 {
-  font-size: 65px;
+  font-size: 96px;
+  font-weight: bold;
 }
 p {
-  font-weight: normal;
+  font-weight: bold;
+  color: var(--branding-color);
 }
 .hero {
-  background: var(--secondary-color);
   text-align: center;
-  padding: 150px 20px;
+  padding: 120px 20px;
 }
 .hero p {
   font-family: var(--default-font-family);
-  font-size: 23px;
+  font-size: 30px;
   margin: 0;
   color: #f9f6f1;
 }
 .hero h2 {
   font-family: var(--default-font-family);
-  font-size: 25px;
+  font-size: 35px;
 }
 .btn-branding {
   background: var (--secondary-color);
-  border-radius: 4px;
   color: var(--branding-color);
-  border: 1px solid var(--branding-color);
   border-radius: 8px;
+  border: 3px solid var(--branding-color);
+  font-size: 40px;
+  padding: 20px 30px;
+  margin: 50px 30px;
+}
+.project-description {
+  padding: 0px 60px;
+}
+br {
+  text-align: center;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+nav a {
+  text-decoration: none;
+  color: var(--branding-color);
+  transition: all 100ms ease-in-out;
+}
+footer {
+  margin: 50px 0;
+}
+footer .social-links a {
+  margin: 0 20px;
+  padding: 6px 12px;
+  border-radius: 50%;
   font-size: 35px;
-  padding: 10px 10px;
-  margin-top: 45px;
+  transition: all 100ms ease-in-out;
+}
+footer .facebook a {
+  color: white;
+}
+footer .facebook a:hover {
+  color: #3e62a9;
+}
+footer .email a {
+  color: white;
+}
+footer .email a:hover {
+  color: #1e88e5;
+}
+footer .copyright a {
+  margin: 0 auto;
+  font-size: 15px;
+  color: white;
+}
+footer .copyright a:hover {
+  cursor: default;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 65px;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero h2 {
+    font-size: 30px;
+  }
+  body {
+    background-size: auto;
+  }
+  .hero p {
+    font-size: 24px;
+  }
+  .btn-branding {
+    background: var (--secondary-color);
+    color: var(--branding-color);
+    border-radius: 8px;
+    border: 3px solid var(--branding-color);
+    font-size: 30px;
+    padding: 10px 20px;
+    margin: 40px 20px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }

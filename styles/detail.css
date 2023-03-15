@@ -1,0 +1,50 @@
+:root {
+  --branding-color: #f9f6f1;
+  --secondary-color: #3d3d3d;
+  --default-font-family: "Libre Franklin", sans-serif;
+}
+body {
+  font-family: var(--default-font-family);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #f9f6f1;
+  font-family: var( --default-font-family);
+  font-weight: bold;
+}
+h1 {
+  font-size: 96px;
+}
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+}
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #f9f6f1;
+}
+.hero h2 {
+  font-family: var(  --default-font-family);
+  font-weight: normal;
+  line-height: 2;
+  font-size: 24px;
+}
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: black;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}

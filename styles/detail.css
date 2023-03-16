@@ -123,6 +123,12 @@ footer .copyright a:hover {
   h1 {
     font-size: 65px;
   }
+  li {
+    list-style-type: circle;
+  }
+  a {
+    color: #daa061;
+  }
   .hero {
     padding: 60px 20px;
   }
@@ -147,8 +153,5 @@ footer .copyright a:hover {
   }
   .project-description {
     text-align: center;
-  }
-  li {
-    list-style-type: circle;
   }
 }

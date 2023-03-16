@@ -62,7 +62,8 @@ a {
 .hero h2 {
   font-size: 35px;
 }
-nav a:hover {
+nav a:hover,
+nav li.active a {
   color: #daa061;
   transition: all 120ms ease-in-out;
 }

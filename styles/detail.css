@@ -79,6 +79,9 @@ nav li.active a {
   );
   border-radius: 4px;
 }
+.logo {
+  max-height: 200px;
+}
 .btn-branding {
   color: var(--branding-color);
   border-radius: 8px;

@@ -104,7 +104,7 @@ footer .social-links a {
 }
 footer .facebook a,
 .email a,
-.message a,
+.instagram a,
 .copyright a,
 .tiktok a {
   color: var(--branding-color);
@@ -118,8 +118,8 @@ footer .facebook a:hover {
 footer .email a:hover {
   color: #1e88e5;
 }
-footer .message a:hover {
-  color: #2e9afb;
+footer .instagram a:hover {
+  color: #952fbe;
 }
 footer .copyright a:hover {
   cursor: default;
@@ -131,7 +131,7 @@ footer .copyright a:hover {
   h1 {
     font-size: 65px;
   }
-  nav li{
+  nav li {
     margin-left: 15px;
   }
   li {

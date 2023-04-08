@@ -1,7 +1,7 @@
 :root {
   --branding-color: white;
   --secondary-color: #000000;
-  --default-font-family: "Roboto", sans-serif;
+  --default-font-family: "Noto";
 }
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -80,7 +80,7 @@ nav li.active a {
   border-radius: 4px;
 }
 .logo {
-  max-height: 130px;
+  max-height: 75px;
 }
 .btn-branding {
   color: var(--branding-color);
@@ -105,8 +105,12 @@ footer .social-links a {
 footer .facebook a,
 .email a,
 .message a,
-.copyright a {
+.copyright a,
+.tiktok a {
   color: var(--branding-color);
+}
+footer .tiktok a:hover {
+  color: #ee1d52;
 }
 footer .facebook a:hover {
   color: #3e62a9;
@@ -127,11 +131,17 @@ footer .copyright a:hover {
   h1 {
     font-size: 65px;
   }
+  nav li{
+    margin-left: 15px;
+  }
   li {
     list-style-type: circle;
   }
   a {
     color: #daa061;
+  }
+  .logo {
+    max-width: 75px;
   }
   .hero {
     padding: 60px 20px;
